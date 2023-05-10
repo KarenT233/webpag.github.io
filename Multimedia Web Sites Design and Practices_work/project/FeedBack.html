@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" /> 
+<link href="LiEat_Layout.css" rel="stylesheet"/>
+<link href="LiEatForm.css" rel="stylesheet"/>
+<script src="submitCondi.js"></script>
+<title>LiEat Fans Page</title>
+<link rel = "Html icon" href = "Html icon.png" type = "image/x-icon">
+</head>
+<body>
+<header>
+
+	<!--<img src="LiEat_title.gif" alt="LiEat" class="Title"/>-->
+	<h1>Personal LiEat Fans Page</h1><br>
+	<p>This pages is all personal opinion<br> BY Tsui Ka Ying Karen<br>
+	
+	<audio controls autoplay loop>
+	<source src="LiEat_Rearrange_Soundtrack.mp3" type="audio/mpeg">
+	</audio>
+	</p>
+</header>
+<nav class="TopBar">
+<a href="#" id="navicon"><img src="navicon.png" alt="" /></a>
+<ul>
+	<li><a href="HomePage.html">Home</a></li>
+	<li><a href="LiEat1.html">LiEat&nbsp;I</a></li>
+	<li><a href="LiEat2.html">LiEat&nbsp;II</a></li>
+	<li><a href="LiEat3.html">LiEat&nbsp;III</a></li>
+	<li><a href="LiEatNovel.html">Novel</a></li>
+	<li><a href="CharRelate.html">Character&nbsp;Relationship</a></li>
+	<li><a href="Download.html">Download&nbsp;&amp;&nbsp;Buy</a></li>
+	<li><a href="FeedBack.html">Feedback</a></li>
+	
+</ul>
+</nav>
+
+<article>
+<section class="intro">
+<h2>Comment for this website</h2>
+<p>Hi, I am one of the developers of this website, thank you for visiting this developing webpage. I hope you get to know more about the LiEat series and attracted by its charm.
+However, for further development, we may need some of your feedback on this website. This is an unpublic form, everything is private. After the questionnaire, 
+you can choose to leave your phone number and we will send message to 3 of the best comments to give out our special prize.
+</p>
+</section>
+
+<div class="questionnaire">
+<form id="webfeedback" action="" method="post">
+
+<fieldset id="visiterInfo">
+<legend>Visiter information</legend>
+
+<div>
+<label for="name">Name/Nickname*</label>
+<input name="VisiterName" id="name" type="text" placeholder="Lilly Chan/ Ironman" required/>
+</div>
+
+<div>
+<label for="tel">Tel(+852 Hong Kong)</label>
+<input name="PhoneNume" id="tel" type="tel" pattern="^\d{5}$" placeholder="12345678" />
+</div>
+
+<div>
+<label>Do you know LiEat series somewhere before?</label>
+<fieldset>
+<label for="Know_cYes">Yes</label>
+<input name="Do_U_Know_LiEat" id="Know_cYes" value="yes" type="radio"/>
+<label for="Know_cNo">No</label>
+<input name="Do_U_Know_LiEat" id="Know_cNo" value="no" type="radio" checked/>
+</fieldset>
+</div>
+
+</fieldset>
+
+<fieldset id="visiterFB">
+<legend>About our LiEat FansPage</legend>
+
+<div>
+<label>Have you play or read LiEat series once?</label>
+<fieldset>
+<label for="Play_cYes">Yes</label>
+<input name="Do_U_Play_LiEat" id="Play_cYes" value="Yes" type="radio" disabled/>
+<label for="Play_cNo">No</label>
+<input name="Do_U_Play_LiEat" id="Play_cNo" value="no" type="radio" disabled/>
+</fieldset>
+</div>
+
+<div id="sizing">
+	<label for="WhichAns">Which do you seen or play?<br> (hold ctrl for multi-selection)</label>
+	
+	<select name="Which_Do_U_play" id="WhichAns" size="4" multiple disabled>
+	
+		<option value="LiEat1">LiEat&nbsp;I Lie Eating Dragon & Vermillion Vampire</option>
+		<option value="LiEat2">LiEat&nbsp;II the Lie Eating Dragon & the Azure Dreameater</option>
+		<option value="LiEat3">LiEat&nbsp;III LiEat the Lie Eating Dragon & the Gold Thief</option>
+		<option value="LiEatNovel">LiEat: The Lie-Eating Dragon and the Forgotten-Color Songstress</option>
+	</select>
+</div>
+
+
+<div>
+<label>Dose our FanPage help?</label>
+<fieldset>
+<label for="cYes">Yes</label>
+<input name="Do_it_help" id="cYes" value="Yes" type="radio"/>
+<label for="cNo">No</label>
+<input name="Do_it_help" id="cNo" value="no" type="radio" checked/>
+</fieldset>
+</div>
+
+<div>
+<label for="comment">Can You tell us why you like about LiEat series/Comment our the fanspage?
+<textarea name="VisiterComment" id="comment" placeholder="Type here" required></textarea>
+</div>
+<div id="buttons">
+<input value="submit comments" type="submit">
+<input value="Cancel all" type="reset">
+</div>
+
+</fieldset>
+
+</form>
+
+</div>
+
+</article>
+<footer>
+<p>This website is made by Tsui Ka Ying Karen, but the source are not owned</p>
+</footer>
+</body>
+</html>

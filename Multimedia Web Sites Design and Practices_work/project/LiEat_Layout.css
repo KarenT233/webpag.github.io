@@ -1,0 +1,73 @@
+@charset "utf-8";
+html{
+	
+	background-color:rgb(22,23,26);
+	max-width:2600px;
+	max-height:2600px;
+	min-width: 480px;
+	min-height: 640px;
+	height:100%;
+	width:100%
+
+	}
+article, aside, figcaption, figure,
+footer, header, main, nav, section { 
+   display: block;
+}
+address, article, aside, blockquote, body, cite, 
+div, dl, dt, dd, em, figcaption, figure, footer, 
+h1, h2, h3, h4, h5, h6, header, html, img, 
+li, main, nav, nav a, ol, p, section, span, ul {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   vertical-align: baseline;
+   background: transparent;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box; 
+	text-align:justify center;
+	font-family:Verdana,Sans-serif;
+	color:white;
+}
+header{
+	font-size:20px;
+	font-style:bold;
+}
+img{
+	max-height: 100%;
+	max-width:100%;
+}
+body {
+	position:center;
+	line-height: 2em;
+}
+h1,h2,h3,h4,h5,h6{
+	font-family:Trebuchet MS,Sans-serif;
+}
+
+nav{
+font-size:18px;
+}
+nav ul {
+   list-style: none;
+   list-style-image: none;
+   	margin: 0;
+	padding: 0;
+	text-align:center;
+}
+
+nav a {
+	color:white;
+	font-family: "Times New Roman", Times, serif;
+	font-weight:bold;
+	text-decoration: none;
+    text-align: center;
+	
+}
+a:hover{ color:aqua;
+font-style:bold;}
+
+div{display:flex;
+}

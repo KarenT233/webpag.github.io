@@ -1,0 +1,201 @@
+@charset "utf-8";
+@import url("LiEatHome_Sytles.css");
+
+aside{
+	width:50%;
+}
+.left{
+	float:left;
+	margin-right:1em;
+}
+#capGraph{
+	width:14em;
+	height:12em;
+	
+}
+.capture {
+	width:13.5em;
+	height:12em;
+	
+}
+.right{
+	/*background-color:white;*/
+	float:right;
+	text-align:right;
+	margin-left:1em;
+}
+
+figure{
+position:relative;
+	/*align-items:center;*/
+}
+#center{
+	justify-content:center;
+}
+#PlaySet{
+	/*background-color:red;*/
+	width:35em;
+	height:20em;
+	margin-left:auto;
+	margin-right:auto;
+	border-radius:60px;
+	position:relative;
+	overflow:hidden;
+}
+#Set1,#Set2{
+	position:absolute;
+	width:100%;
+	height:100%;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+iframe{
+width:100%;
+height:100%;
+}
+@keyframes sliding{
+	0%{top:0px;bottom:0px;}
+	75%{transform:scaleY(2);}
+	100%{transform: translateY(600px);}
+}
+#Set2 h1{
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:3.5em;
+	text-align:center;
+	}
+#Set2{
+	background-color:black;
+	animation:sliding 0.7s ease-in-out both;
+	animation-play-state:paused;
+}
+#Set2:hover{animation-play-state:running;}
+	
+.ending{
+	width:100%;
+	height:50em;
+
+}
+
+#EndingPath h3 img{
+	margin:0px 3px;
+	height:10px;
+	width:20px;
+}
+.ending div img{
+	position:center;
+	height:40em;
+	width:100%;
+}
+#Hidden{
+	display:none;
+}
+#EndingPath:hover+#Hidden,#Hidden:hover{
+	display:block;
+}
+#EndingPath:hover #hoverIcon,#Hidden:hover~#hoverIcon{
+	transform:rotate(180deg);
+}
+.end{
+	width:12em;
+	border-radius:90px;
+	background-color:white;
+	float:right;
+	font-weight:bold;
+}
+.end a{
+	margin-left:1em;
+	float:right;
+}
+#sideDt{
+	margin-left:40em;
+}
+#book{
+	justify-content:center;
+}
+#book img{
+	height:28em;
+	width:18em;
+}
+#LinkBuy{
+	position:center;
+	width:100%;
+	
+	 text-align: center;
+	margin-left:auto;
+	margin-right:auto;
+	
+}
+#LinkBuy a:hover img{
+	animation:bouncing 1s ease-in-out infinite alternate both;
+	animation-play-state:running;
+}
+#Buy{
+	margin-top:20em;
+	height:20em;
+	width:30em;
+}
+
+#pointer{
+	margin-left:30em;
+
+}
+#pointer img{
+
+	
+	animation:pressing 1s ease-in-out infinite alternate both;
+	animation-play-state:running;
+	width:20em;
+	height:20em;
+}
+/*#LOOK{
+	display:flex;
+position:absolute;
+}*/
+
+
+
+
+
+
+@media only screen and (max-width:600px){
+.ending div img{
+	position:center;
+	height:20em;
+	width:100%;
+}
+#Set2 h1{
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:1.5em;
+	text-align:center;
+	}
+.end{
+	width:13em;
+	border-radius:90px;
+	background-color:white;
+	float:right;
+	font-weight:bold;
+}
+.right figcaption,.left figcaption{
+	margin-top:18em;
+}
+#sideDt{
+	margin-left:30em;
+	margin-top:30em;
+}
+h1{
+	font-size:28px;
+}
+
+#pointer{
+
+	display:none;
+
+}
+#Book{
+	height:20em;
+	width:10em;
+}
+}

@@ -1,0 +1,201 @@
+@charset "utf-8";
+@import url("LiEatHome_Sytles.css");
+@import url("LiEat1to3_Sytles.css");
+#platform{
+display:inline;
+
+}
+#StoreLogo{
+	justify-content:center;
+	overflow:hidden;
+	flex-wrap:wrap;
+}
+#StoreLogo img{
+position:relative;
+	width:18em;
+	height:8.5em;
+	border-radius:10px;
+	
+	
+}
+#Steam p,#Playism p,#ChineseVer p{
+	opacity: 0;
+	position:absolute;
+	justify-content:center;
+	background-image: linear-gradient(to right,rgba(30,1,1,0.8),rgba(1,0,10,0.5));
+	margin-top:5em;
+	transform: translateX(-30px);
+	
+}
+#Steam ,#Playism ,#ChineseVer{
+	margin-left:2em;
+	overflow:hidden;
+	
+}
+#Steam:hover p,#Playism:hover p,#ChineseVer:hover p{
+	transform: translateX(0px);
+	opacity: 1;
+	transition:opacity 1s ease-in-out,transform 0.5s ease-in-out;
+}
+
+#blank1{
+	width:100%;
+	height:5em;
+}
+#OnSales{
+display:inline;
+
+}
+
+#LogoOfPub img{
+width:8em;
+height:4em;
+border-radius:30px;
+
+
+}
+#shop{
+	justify-content:center;
+	overflow:hidden;
+	flex-wrap:wrap;
+}
+#shop img{
+position:relative;
+	width:18em;
+	height:8.5em;
+	border-radius:10px;
+	
+	
+}
+#joint_publish p,#bookTw p,#amazon p{
+	opacity: 0;
+	position:absolute;
+	justify-content:center;
+	background-image: linear-gradient(to right,rgba(30,1,1,0.8),rgba(1,0,10,0.5));
+	margin-top:5em;
+	transform: translateY(40px);
+
+	
+}
+#joint_publish,#bookTw,#amazon{
+	margin-left:2em;
+	overflow:hidden;
+	
+}
+#joint_publish:hover p,#bookTw:hover p,#amazon:hover p{
+	transform: translateY(0px);
+	opacity: 1;
+	transition:opacity 1s ease-in-out,transform 0.5s ease-in-out;;
+	
+	
+}
+#Relationship{
+	position:center;
+	margin:3em 2em;
+}
+
+
+#char1,#char2,#char3{
+	display: flex;
+	flex-wrap: wrap;
+	align-items:center;	
+	overflow: hidden;
+}
+#Teo1,#Efina1,#Neil,#Brett,#Rosalie,#Levin,#Carol,#Keith,#Rachel,#Efina2,
+#Teo2,#William,#Sofia,#Olivia,#Lucas,#Thom,#Mars,#Gene,#Enos,#Cyril,#Iris,
+#Teo3,#Efina3{
+	position:relative;
+
+}
+#iconCover,#iconCover2,#iconCover3{
+	position:absolute;
+
+}
+#Teo1 img,#Efina1 img,#Neil img,#Brett img,#Rosalie img,#Levin img,#Carol img,
+#Keith img,#Rachel img,#Efina2 img,#Teo2 img,#William img,#Sofia img,#Olivia img,
+#Lucas img,#Thom img,#Mars img,#Gene img,#Enos img,#Cyril img,#Iris img,
+#Teo3 img,#Efina3 img{
+	width:10em;
+	height:10em;
+	border-width:20px 20px;
+	border-radius:180px;
+}
+
+#iconCover {
+background-image:linear-gradient(to bottom,rgba(163,51,61,0.6),rgba(0,0,0,0.3));
+	width:10em;
+	height:10em;
+	margin:auto auto;
+	border-width:20px 20px;
+	border-radius:180px;
+	/*transform: translateX(300px);*/
+	 opacity: 0;
+	 transition:opacity 0.5s ease-in-out;
+}
+#iconCover2 {
+background-image:linear-gradient(to bottom,rgba(88,147,151,0.6),rgba(0,0,0,0.3));
+	width:10em;
+	height:10em;
+	margin:auto auto;
+	border-width:20px 20px;
+	border-radius:180px;
+	/*transform: translateX(300px);*/
+	 opacity: 0;
+	 transition:opacity 0.5s ease-in-out;
+}
+#iconCover3 {
+background-image:linear-gradient(to bottom,rgba(189,177,107,0.6),rgba(0,0,0,0.3));
+	width:10em;
+	height:10em;
+	margin:auto auto;
+	border-width:20px 20px;
+	border-radius:180px;
+	/*transform: translateX(300px);*/
+	 opacity: 0;
+	 transition:opacity 0.5s ease-in-out;
+}
+#iconCover p,#iconCover2 p,#iconCover3 p{
+	font-size:2em;
+	border-width:20px 20px;
+	margin:auto auto;
+	text-align:center;
+}
+#char1:hover #iconCover,#char2:hover #iconCover2,#char3:hover #iconCover3{
+  opacity: 1;
+transition:opacity 0.5s ease-in-out;
+  /* 'cancel' transition */
+}
+
+fieldset{
+	display:inline-flex;
+	justify-content:center;
+	flex-wrap:wrap;
+	flex-direction:row;
+	width:100%;
+}
+#inter{
+	width:20em;
+	height:auto;
+}
+#LiEat3,#LiEat2,#LiEat1{
+	margin-top:1em;
+}
+
+@media only screen and (max-width:600px){
+	#StoreLogo{
+	flex-direction:column;
+	
+}
+	#shop{
+	margin-top:2em;
+	flex-direction:column;
+}
+#Steam ,#Playism ,#ChineseVer{
+	margin-top:2em;	
+	
+}
+#joint_publish,#bookTw,#amazon{
+	margin-top:2em;	
+}
+
+}
